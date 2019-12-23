@@ -14,6 +14,9 @@
 			<span class="genre">{{ genre }}</span>
 			{% endfor %}
 		</div>
+		<form action="/venues/{{ venue.id }}/edit">
+			<button type="submit">Edit Venue</button>
+		 </form>
 		<p>
 			<i class="fas fa-globe-americas"></i> {{ venue.city }}, {{ venue.state }}
 		</p>
